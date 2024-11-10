@@ -7,19 +7,19 @@ export const cssValue = [
   },
   {
     name: "font-size",
-    progress: 80,
+    progress: 82,
   },
   {
     name: "font-weight",
-    progress: 60,
+    progress: 62,
   },
   {
     name: "width",
-    progress: 60,
+    progress: 62,
   },
   {
     name: "height",
-    progress: 60,
+    progress: 62,
   },
   {
     name: "padding",
@@ -27,27 +27,27 @@ export const cssValue = [
   },
   {
     name: "margin",
-    progress: 50,
+    progress: 52,
   },
   {
     name: "background-color",
-    progress: 60,
+    progress: 62,
   },
   {
     name: "border",
-    progress: 50,
+    progress: 52,
   },
   {
     name: "text-decoration",
-    progress: 25,
+    progress: 35,
   },
   {
     name: "text-transform",
-    progress: 25,
+    progress: 35,
   },
   {
     name: "line-height",
-    progress: 25,
+    progress: 27,
   },
   {
     name: "opacity",
@@ -55,19 +55,19 @@ export const cssValue = [
   },
   {
     name: "letter-spacing",
-    progress: 25,
+    progress: 27,
   },
   {
     name: "display",
-    progress: 50,
+    progress: 52,
   },
   {
     name: "justify-content",
-    progress: 25,
+    progress: 27,
   },
   {
     name: "align-items",
-    progress: 25,
+    progress: 27,
   },
   {
     name: "flex-direction",
@@ -99,7 +99,7 @@ export const cssValue = [
   },
   {
     name: "Селекторы по id",
-    progress: 50,
+    progress: 55,
   },
   {
     name: "Селекторы по тэгу",
@@ -107,7 +107,7 @@ export const cssValue = [
   },
   {
     name: "Комбинированные селекторы",
-    progress: 25,
+    progress: 35,
   },
   {
     name: "Псевдокласс hover",
@@ -119,12 +119,28 @@ export const cssValue = [
   },
   {
     name: "Подключение css файла",
-    progress: 40,
+    progress: 100,
+  },
+  {
+    name: "text-align",
+    progress: 50,
+  },
+  {
+    name: "Селектор звездочка '*'",
+    progress: 25,
+  },
+  {
+    name: "border-radius",
+    progress: 25,
+  },
+  {
+    name: "gap",
+    progress: 25,
   },
 ]
   .sort((a, b) => b.progress - a.progress)
   .map((item, i) => {
     item.number = i + 1;
-    item.progress = <ProgressBar value={item.progress - 15}></ProgressBar>;
+    item.progress = <ProgressBar value={item.progress - 13}></ProgressBar>;
     return item;
   });

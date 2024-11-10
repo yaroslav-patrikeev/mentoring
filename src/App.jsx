@@ -5,6 +5,9 @@ import "primereact/resources/themes/fluent-light/theme.css"; // тема PrimeRe
 import { Card } from "primereact/card";
 import { htmlValue } from "./htmlValue";
 import { cssValue } from "./cssValue";
+import { bemValue } from "./bemValue";
+import { internetTechnologiesValue } from "./internetTechologiesValue";
+import { pluginsValue } from "./pluginsValue";
 
 function App() {
   return (
@@ -47,6 +50,66 @@ function App() {
         }}
       >
         <DataTable value={cssValue} tableStyle={{ maxWidth: "100%" }}>
+          <Column field="number" header="№" style={{ width: "5%" }}></Column>
+          <Column field="name" header="Тема" style={{ width: "45%" }}></Column>
+          <Column
+            field="progress"
+            header="Прогресс"
+            style={{ width: "50%" }}
+          ></Column>
+        </DataTable>
+      </Card>
+      <Card
+        title="Методология БЭМ"
+        style={{
+          textAlign: "left",
+          width: "95%",
+          maxWidth: "900px",
+          marginBottom: "30px",
+        }}
+      >
+        <DataTable value={bemValue} tableStyle={{ maxWidth: "100%" }}>
+          <Column field="number" header="№" style={{ width: "5%" }}></Column>
+          <Column field="name" header="Тема" style={{ width: "45%" }}></Column>
+          <Column
+            field="progress"
+            header="Прогресс"
+            style={{ width: "50%" }}
+          ></Column>
+        </DataTable>
+      </Card>
+      <Card
+        title="Сети и интернет-технологии"
+        style={{
+          textAlign: "left",
+          width: "95%",
+          maxWidth: "900px",
+          marginBottom: "30px",
+        }}
+      >
+        <DataTable
+          value={internetTechnologiesValue}
+          tableStyle={{ maxWidth: "100%" }}
+        >
+          <Column field="number" header="№" style={{ width: "5%" }}></Column>
+          <Column field="name" header="Тема" style={{ width: "45%" }}></Column>
+          <Column
+            field="progress"
+            header="Прогресс"
+            style={{ width: "50%" }}
+          ></Column>
+        </DataTable>
+      </Card>
+      <Card
+        title="IDE и плагины"
+        style={{
+          textAlign: "left",
+          width: "95%",
+          maxWidth: "900px",
+          marginBottom: "30px",
+        }}
+      >
+        <DataTable value={pluginsValue} tableStyle={{ maxWidth: "100%" }}>
           <Column field="number" header="№" style={{ width: "5%" }}></Column>
           <Column field="name" header="Тема" style={{ width: "45%" }}></Column>
           <Column

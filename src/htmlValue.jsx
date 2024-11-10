@@ -19,31 +19,31 @@ export const htmlValue = [
   },
   {
     name: "<h1>...<h6>",
-    progress: 50,
+    progress: 100,
   },
   {
     name: "<p>",
-    progress: 50,
+    progress: 100,
   },
   {
     name: "<div>",
-    progress: 50,
+    progress: 100,
   },
   {
     name: "<img>",
-    progress: 50,
+    progress: 100,
   },
   {
     name: "<a>",
-    progress: 50,
+    progress: 60,
   },
   {
     name: "Комментарии в HTML",
-    progress: 25,
+    progress: 50,
   },
   {
     name: "<ul>",
-    progress: 25,
+    progress: 35,
   },
   {
     name: "<ol>",
@@ -55,7 +55,7 @@ export const htmlValue = [
   },
   {
     name: "<li>",
-    progress: 25,
+    progress: 35,
   },
   {
     name: "<meta>",
@@ -63,16 +63,24 @@ export const htmlValue = [
   },
   {
     name: "<link>",
-    progress: 25,
+    progress: 40,
   },
   {
     name: "<style>",
     progress: 100,
   },
+  {
+    name: "<header>",
+    progress: 25,
+  },
+  {
+    name: "<nav>",
+    progress: 25,
+  },
 ]
   .sort((a, b) => b.progress - a.progress)
   .map((item, i) => {
     item.number = i + 1;
-    item.progress = <ProgressBar value={item.progress - 15}></ProgressBar>;
+    item.progress = <ProgressBar value={item.progress - 13}></ProgressBar>;
     return item;
   });
