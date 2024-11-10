@@ -7,7 +7,7 @@ import { htmlValue } from "./htmlValue";
 import { cssValue } from "./cssValue";
 import { bemValue } from "./bemValue";
 import { internetTechnologiesValue } from "./internetTechologiesValue";
-import { pluginsValue } from "./pluginsValue";
+import { pluginsValue } from "./pluginsAndAppsValue";
 
 function App() {
   return (
@@ -101,7 +101,7 @@ function App() {
         </DataTable>
       </Card>
       <Card
-        title="IDE и плагины"
+        title="Программы и плагины"
         style={{
           textAlign: "left",
           width: "95%",
