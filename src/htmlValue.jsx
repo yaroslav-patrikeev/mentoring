@@ -77,10 +77,18 @@ export const htmlValue = [
     name: "<nav>",
     progress: 25,
   },
+  {
+    name: "<span>",
+    progress: 25,
+  },
+  {
+    name: "<main>",
+    progress: 25,
+  },
 ]
   .sort((a, b) => b.progress - a.progress)
   .map((item, i) => {
     item.number = i + 1;
-    item.progress = <ProgressBar value={item.progress - 13}></ProgressBar>;
+    item.progress = <ProgressBar value={item.progress - 11}></ProgressBar>;
     return item;
   });

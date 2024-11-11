@@ -7,7 +7,7 @@ export const cssValue = [
   },
   {
     name: "font-size",
-    progress: 82,
+    progress: 84,
   },
   {
     name: "font-weight",
@@ -15,11 +15,11 @@ export const cssValue = [
   },
   {
     name: "width",
-    progress: 62,
+    progress: 66,
   },
   {
     name: "height",
-    progress: 62,
+    progress: 64,
   },
   {
     name: "padding",
@@ -27,11 +27,11 @@ export const cssValue = [
   },
   {
     name: "margin",
-    progress: 52,
+    progress: 55,
   },
   {
     name: "background-color",
-    progress: 62,
+    progress: 64,
   },
   {
     name: "border",
@@ -47,7 +47,7 @@ export const cssValue = [
   },
   {
     name: "line-height",
-    progress: 27,
+    progress: 30,
   },
   {
     name: "opacity",
@@ -55,23 +55,23 @@ export const cssValue = [
   },
   {
     name: "letter-spacing",
-    progress: 27,
+    progress: 30,
   },
   {
     name: "display",
-    progress: 52,
+    progress: 54,
   },
   {
     name: "justify-content",
-    progress: 27,
+    progress: 30,
   },
   {
     name: "align-items",
-    progress: 27,
+    progress: 30,
   },
   {
     name: "flex-direction",
-    progress: 25,
+    progress: 28,
   },
   {
     name: "flex-wrap",
@@ -99,7 +99,7 @@ export const cssValue = [
   },
   {
     name: "Селекторы по id",
-    progress: 55,
+    progress: 57,
   },
   {
     name: "Селекторы по тэгу",
@@ -123,7 +123,7 @@ export const cssValue = [
   },
   {
     name: "text-align",
-    progress: 50,
+    progress: 54,
   },
   {
     name: "Селектор звездочка '*'",
@@ -131,16 +131,56 @@ export const cssValue = [
   },
   {
     name: "border-radius",
-    progress: 25,
+    progress: 27,
   },
   {
     name: "gap",
+    progress: 26,
+  },
+  {
+    name: "background-image",
+    progress: 25,
+  },
+  {
+    name: "background-position",
+    progress: 25,
+  },
+  {
+    name: "background-repeat",
+    progress: 25,
+  },
+  {
+    name: "background-size",
+    progress: 25,
+  },
+  {
+    name: "box-sizing",
+    progress: 25,
+  },
+  {
+    name: "z-index",
+    progress: 30,
+  },
+  {
+    name: "position",
+    progress: 30,
+  },
+  {
+    name: "top, left, bottom, right",
+    progress: 30,
+  },
+  {
+    name: "Псевдоэлементы ::before, ::after",
+    progress: 25,
+  },
+  {
+    name: "Единицы измерения vw, vh",
     progress: 25,
   },
 ]
   .sort((a, b) => b.progress - a.progress)
   .map((item, i) => {
     item.number = i + 1;
-    item.progress = <ProgressBar value={item.progress - 13}></ProgressBar>;
+    item.progress = <ProgressBar value={item.progress - 10}></ProgressBar>;
     return item;
   });

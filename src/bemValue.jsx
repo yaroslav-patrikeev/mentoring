@@ -3,11 +3,11 @@ import { ProgressBar } from "primereact/progressbar";
 export const bemValue = [
   {
     name: "Блок",
-    progress: 50,
+    progress: 55,
   },
   {
     name: "Элемент",
-    progress: 50,
+    progress: 55,
   },
   {
     name: "Модификатор",
@@ -17,6 +17,6 @@ export const bemValue = [
   .sort((a, b) => b.progress - a.progress)
   .map((item, i) => {
     item.number = i + 1;
-    item.progress = <ProgressBar value={item.progress - 15}></ProgressBar>;
+    item.progress = <ProgressBar value={item.progress - 13}></ProgressBar>;
     return item;
   });
