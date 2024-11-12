@@ -59,15 +59,15 @@ export const cssValue = [
   },
   {
     name: "display",
-    progress: 54,
+    progress: 56,
   },
   {
     name: "justify-content",
-    progress: 30,
+    progress: 35,
   },
   {
     name: "align-items",
-    progress: 30,
+    progress: 35,
   },
   {
     name: "flex-direction",
@@ -127,7 +127,7 @@ export const cssValue = [
   },
   {
     name: "Селектор звездочка '*'",
-    progress: 25,
+    progress: 30,
   },
   {
     name: "border-radius",
@@ -181,6 +181,6 @@ export const cssValue = [
   .sort((a, b) => b.progress - a.progress)
   .map((item, i) => {
     item.number = i + 1;
-    item.progress = <ProgressBar value={item.progress - 10}></ProgressBar>;
+    item.progress = <ProgressBar value={item.progress - 8}></ProgressBar>;
     return item;
   });
