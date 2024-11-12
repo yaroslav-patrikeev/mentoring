@@ -9,7 +9,24 @@ import { bemValue } from "./bemValue";
 import { internetTechnologiesValue } from "./internetTechologiesValue";
 import { pluginsValue } from "./pluginsAndAppsValue";
 
+function checkList(list) {
+  const test = new Set();
+  list.forEach((item) => {
+    if (test.has(item.name)) {
+      console.error(`Имя ${item.name} уже есть`);
+    } else {
+      test.add(item.name);
+    }
+  });
+}
+
 function App() {
+  checkList(htmlValue);
+  checkList(cssValue);
+  checkList(bemValue);
+  checkList(internetTechnologiesValue);
+  checkList(pluginsValue);
+
   return (
     <>
       <h1

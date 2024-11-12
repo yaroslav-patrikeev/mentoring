@@ -50,10 +50,6 @@ export const htmlValue = [
     progress: 25,
   },
   {
-    name: "<input>",
-    progress: 25,
-  },
-  {
     name: "<li>",
     progress: 35,
   },
@@ -91,11 +87,7 @@ export const htmlValue = [
   },
   {
     name: "<input>",
-    progress: 25,
-  },
-  {
-    name: "<form>",
-    progress: 25,
+    progress: 27,
   },
   {
     name: "<textarea>",
@@ -123,10 +115,6 @@ export const htmlValue = [
   },
   {
     name: "<legend>",
-    progress: 25,
-  },
-  {
-    name: "<form>",
     progress: 25,
   },
   {
